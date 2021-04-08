@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="txtID" prefHeight="536.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stocksmanager.UI.AddItemController">
+   <children>
+      <JFXTextField fx:id="txtId" labelFloat="true" layoutX="138.0" layoutY="30.0" onAction="#getById" promptText="ID" />
+      <JFXTextField fx:id="txtName" layoutX="138.0" layoutY="93.0" promptText="Name" />
+      <JFXTextField fx:id="txtQuantity" layoutX="138.0" layoutY="161.0" promptText="Quantity" />
+      <JFXTextField fx:id="txtUnit_Price" layoutX="138.0" layoutY="237.0" promptText="Unit_Price" />
+      <JFXTextField fx:id="txtManufacturer" layoutX="138.0" layoutY="323.0" promptText="Manufacturer" />
+      <JFXTextField fx:id="txtMrp" layoutX="138.0" layoutY="415.0" promptText="MRP" />
+      <JFXButton fx:id="btnAdd" layoutX="510.0" layoutY="446.0" onAction="#add" prefHeight="31.0" prefWidth="202.0" text="Add" />
+      <JFXButton fx:id="btnUpdate" layoutX="517.0" layoutY="477.0" onAction="#update" prefHeight="31.0" prefWidth="89.0" text="Update" />
+      <JFXButton fx:id="btnDelete" layoutX="606.0" layoutY="477.0" onAction="#delete" prefHeight="31.0" prefWidth="77.0" text="Delete" />
+      <JFXRadioButton fx:id="rbAdd" layoutX="533.0" layoutY="35.0" onAction="#rbAddClick" text="Add" />
+      <JFXRadioButton fx:id="rbUpdate" layoutX="533.0" layoutY="72.0" onAction="#rbUPDATEClick" text="Update/Delete" />
+   </children>
+</AnchorPane>
